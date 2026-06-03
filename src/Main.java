@@ -53,7 +53,7 @@ public class Main {
                         while(rs.next()){
                             System.out.printf("%d - %s - %s%n",
                                     rs.getInt("id "),
-                                    rs.getString("nome"),
+                                    rs.getString("nome "),
                                     rs.getString("email")
                             );
                         }
