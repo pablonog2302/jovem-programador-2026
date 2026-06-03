@@ -52,7 +52,7 @@ public class Main {
                         System.out.println("LISTA");
                         while(rs.next()){
                             System.out.printf("%d - %s - %s%n",
-                                    rs.getInt("id"),
+                                    rs.getInt("id "),
                                     rs.getString("nome"),
                                     rs.getString("email")
                             );
