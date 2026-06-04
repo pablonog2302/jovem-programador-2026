@@ -48,12 +48,12 @@ public class Main {
                         System.out.println("READ\n");
                         String select = "select * from usuario";
                         Statement stat = conexao.createStatement();
-                        ResultSet rs = stat.executeQuery(select);
+                        ResultSet rs = stat.executeQuery(select) ;
                         System.out.println("LISTA");
                         while(rs.next()){
                             System.out.printf("%d - %s - %s%n",
-                                    rs.getInt("id "),
-                                    rs.getString("nome "),
+                                    rs.getInt("id"),
+                                    rs.getString("nome"),
                                     rs.getString("email")
                             );
                         }
